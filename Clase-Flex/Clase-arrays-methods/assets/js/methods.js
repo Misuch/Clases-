@@ -44,7 +44,7 @@ function fShift(e){
 function fSlice(e){
     b = 0;
     e = 2;
-    newArray = names.slice(b,e);
+    newArray = names.slice(b,e);ca
     showData(newArray,newContent);
 }
 function fConcat(e){
