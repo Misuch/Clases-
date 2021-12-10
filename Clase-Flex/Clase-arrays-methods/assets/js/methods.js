@@ -1,13 +1,17 @@
 //Array
 var names = ["Andrea","Maria","Pedro","Juan","Martina"];
+var numbers = ["1","5","18","2","4"];
+
 var content = document.getElementById("array-content");
 var newContent = document.getElementById("new-arrays-content");
 var content2 = document.getElementById("array-index-methods"); 
 var results = document.getElementById("results-contents");
+var ejerci = document.getElementById("contents-ejerci");
 
 //Mostrar datos de array al cargar pagina
 showData(names,content);
-showData(names,content2)
+showData(names,content2);
+showData(numbers,ejerci);
 //Variable de botones
 let btnPush = document.getElementById("btn-push");
 let btnPop = document.getElementById("btn-pop");
@@ -23,6 +27,11 @@ let btnIncludes = document.getElementById("btn-Includes");
 let btnFind = document.getElementById("btn-Find");
 let btnFindIndex = document.getElementById("btn-FindIndex");
 let btnFilter = document.getElementById("btn-Filter");
+//-------------------------------------------------------
+let btnSort = document.getElementById("btn-Sort");
+let btnReverse = document.getElementById("btn-Reverse");
+let btnSort1 = document.getElementById("btn-Sort1");
+
 //Variable de input
 var inputSearch = document.getElementById("ip-search").value;
 var inputInt = document.getElementById("ip-index").value;
@@ -40,6 +49,12 @@ btnLastindexOf.onclick = fLastIndexOf;
 btnIncludes.onclick = fIncludes;
 btnFind.onclick = fFind;
 btnFilter.onclick = fFilter;
+//----------------------------------------------------------
+btnSort.onclick = fSort;
+btnReverse.onclick = fReverse;
+btnSort1.onclick = fSort1;
+
+
 //Funciones
 function fpush(e){
     names.push("Margarito");
@@ -137,6 +152,21 @@ function fFilter(){
     else{
         results.innerHTML = mensaje;
     }
+}
+function fSort1(){
+    numbers.sort(),
+    showData(numbers,ejerci);
+}
+function fSort(){
+    numbers.sort(Comparacion);
+    showData(numbers,ejerci);
+    function Comparacion(a, b){
+        return a - b;
+    }
+}
+function fReverse(){
+    numbers.reverse();
+    showData(numbers,ejerci);
 }
 
 function showData(array,div){
