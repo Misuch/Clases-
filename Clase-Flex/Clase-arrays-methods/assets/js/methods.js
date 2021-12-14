@@ -1,17 +1,20 @@
 //Array
 var names = ["Andrea","Maria","Pedro","Juan","Martina"];
 var numbers = ["1","5","18","2","4"];
+var numeros = ["1","2","3","4","5"];
 
 var content = document.getElementById("array-content");
 var newContent = document.getElementById("new-arrays-content");
 var content2 = document.getElementById("array-index-methods"); 
 var results = document.getElementById("results-contents");
 var ejerci = document.getElementById("contents-ejerci");
+var content3 = document.getElementById("show");
 
 //Mostrar datos de array al cargar pagina
 showData(names,content);
 showData(names,content2);
 showData(numbers,ejerci);
+showData(numeros,content3);
 //Variable de botones
 let btnPush = document.getElementById("btn-push");
 let btnPop = document.getElementById("btn-pop");
@@ -31,10 +34,14 @@ let btnFilter = document.getElementById("btn-Filter");
 let btnSort = document.getElementById("btn-Sort");
 let btnReverse = document.getElementById("btn-Reverse");
 let btnSort1 = document.getElementById("btn-Sort1");
+//-------------------------------------------------------
+let btnMap = document.getElementById("btn-map");
+let btnReduce = document.getElementById("btn-reduce");
 
 //Variable de input
 var inputSearch = document.getElementById("ip-search").value;
 var inputInt = document.getElementById("ip-index").value;
+
 //Anclar funciones para los botones
 btnPush.onclick = fpush;
 btnPop.onclick = fpop;
@@ -53,7 +60,9 @@ btnFilter.onclick = fFilter;
 btnSort.onclick = fSort;
 btnReverse.onclick = fReverse;
 btnSort1.onclick = fSort1;
-
+//----------------------------------------------------------
+btnMap.onclick = fMap;
+btnReduce.onclick = fReduce;
 
 //Funciones
 function fpush(e){
@@ -168,7 +177,14 @@ function fReverse(){
     numbers.reverse();
     showData(numbers,ejerci);
 }
-
+function fMap(e){
+    var square = numeros.map(x => x * x);
+    content3.innerHTML= square;
+}
+function fReduce(e){
+    var reducer = numeros.reduce(function(a, b){ return a + b; });
+    content3.innerHTML= reducer;
+}
 function showData(array,div){
     let lst="";
     for(i=0;i < array.length;i++){
