@@ -1,0 +1,15 @@
+.img-api{
+    width: 250px;
+    height: 200px;
+    max-width: 100%;
+    max-width: 1200px;
+    margin: 30px;
+}
+#gallery{
+    background-color: #cd5c5c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: lightgoldenrodyellow;
+}
