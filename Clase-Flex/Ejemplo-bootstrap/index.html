@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <title>¡Bienvenidos a Crack The Code!</title>
+</head>
+<body>
+    <h1 class="text-dark mb-4 text-center">¡Hola Cracker!</h1>
+    <button type="button" class="btn btn-danger p-3 ms-5">Click aquí</button>
+    <p class="display-3">Hola 2</p>
+
+    <form class="mx-5" action="#">
+
+        <div class="m-5">
+            <label class="form-label" for="namber">Ingresa tu nombre</label>
+            <input class="form-control" id="namber "type="text" class="field">
+        </div>
+
+        <div class="m-5">
+            <label class="form-label" for="mail">Ingresa tu correo electronico</label>
+            <input class="form-control" id="mail" type="email" class="field">
+        </div>
+
+        <div class="m-5">
+            <label class="form-label" for="pass">Ingresa tu contraseña</label>
+            <input class="form-control" type="password" id="pass">
+        </div>
+
+        <button class="m-3 p-2 btn-primary" type="submit" class="btn btn-primary">Ingresar</button>
+
+    </form>
+
+<!--------Tabas o pestañas--------->
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="summary-tab" data-bs-toggle="tab" data-bs-target="#summary" type="button" role="tab" aria-controls="summary" aria-selected="false">Summary</button>
+    </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <div class="flex-child">
+            <div class="post">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/810.png">
+                <div class="info">
+                    <h3>Grookey</h3>
+                    <p>Esta es la información de un pokemon. Esta es la información de un pokemon. Esta es la información de un pokemon. Esta es la información de un pokemon.</p>
+                </div>
+            </div>
+    </div>
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <div class="container">
+            <div>One</div>
+            <div>Two</div>
+            <div>Three</div>
+            <div>Four</div>
+            <div>Five</div>
+            <div>Six</div>
+            <div>Seven</div>
+            <div>Eight</div>
+            <div>Nine</div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+        <h1>Formulario Responsive</h1>
+    <form>
+        <div class="content-form">
+            <input type="text" class="field" placeholder="Ingresa tu nombre">
+            <input type="number" class="field" placeholder="Ingresa tu edad">
+            <input type="email" class="field" placeholder="Ingresa tu e-mail">
+            <input type="text" class="field" placeholder="Ingresa tu ciudad">
+            <textarea  class="field-area" cols="20" rows="5" placeholder="Escribe un mensaje"></textarea>
+        </div>
+        <button class="btn-form" type="submit">Enviar</button>
+    </form>
+    </div>
+    <div class="tab-pane fade" id="summary" role="tabpanel" aria-labelledby="summary-tab">
+    <h2>El anime</h2>
+    <div>
+        <img src="https://somoskudasai.com/wp-content/uploads/2021/11/Visual-VV.jpg" alt="Imagen de anime">
+    </div>
+    <p>Son <b><em>dibujos animados</em></b>, el cual tiene un origen Japones.</p>
+    <p><lh>Los animes que yo recomiendo son:</lh></p>
+    <p><li>Kaichou wa maid sama</li></p>
+    <p><li>clannad</li></p>
+    <p><li>Special A</li></p>
+    <p><li>Kimi ni todoke</li></p>
+    <p><li>Candy</li></p>
+    </div>
+    </div>
+
+    <!------Borders------->
+    <div class="border border-success border-2 rounded-circle m-3" style=" width:150px; height:150px;"></div>
+
+    <!------Shadows------->
+    <div class="shadow-none p-3 mb-5 bg-light rounded">No shadow</div>
+    <div class="shadow-sm p-3 mb-5 bg-body rounded">Small shadow</div>
+    <div class="shadow p-3 mb-5 bg-body rounded">Regular shadow</div>
+    <div class="shadow-lg p-3 mb-5 bg-body rounded">Larger shadow</div>
+
+<button type="button" class="btn btn-lg btn-dark" data-bs-toggle="popover" title="Titulo del Popover" data-bs-content="Este es el contenido del Popover normal" data-bs-placement="top">Click en el Popover</button>
+
+    <!------Grillas con Bootstrap------->
+    <div class="my-5">
+        <div class="row">
+            <div class="col-sm col-lg-3 border border-2 border-dark">Columna 1</div>
+            <div class="col-sm col-lg-3 border border-2 border-dark">Columna 2</div>
+            <div class="col-sm col-lg-3 border border-2 border-dark">Columna 3</div>
+            <div class="col-sm col-lg-3 border border-2 border-dark">Columna 4</div>
+        </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+})
+    var popover = new bootstrap.Popover(document.querySelector('.example-popover'), {
+        container: 'body'
+})
+</script>
+</body>
+</html>
