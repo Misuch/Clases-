@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="icon" href="https://cdn-icons.flaticon.com/png/512/995/premium/995874.png?token=exp=1641179971~hmac=6a5e20bd4f39433bf8ecd616e28d388b" alt="Img" width="50" height="50" class="d-inline-block align-text-top">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Recetas Peruanas</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="#">
+                <img src="https://cdn-icons.flaticon.com/png/512/995/premium/995874.png?token=exp=1641179971~hmac=6a5e20bd4f39433bf8ecd616e28d388b" alt="Img" width="50" height="50" class="d-inline-block align-text-top">
+            Recetas
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Filtro
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" category="all" href="#">Todo</a></li>
+                    <li><a class="dropdown-item" category="costa" href="#">Costa</a></li>
+                    <li><a class="dropdown-item" category="sierra" href="#">Sierra</a></li>
+                    <li><a class="dropdown-item" category="selva" href="#">Selva</a></li>
+                </ul>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Busqueda" aria-label="Search">
+                <button class="btn btn-outline-success " type="submit">Buscar</button>
+            </form>
+            </div>
+        </div>
+    </nav>
+<div class="cardGrid bg-success">
+    <div class="card m-5" style="width: 20rem;" category="costa">
+        <img src="https://gourmetdemexico.com.mx/wp-content/uploads/2017/09/field_image_ceviche-peruano2.jpg" class="card-img-top" alt="Img Ceviche">
+        <div class="card-body">
+            <h5 class="card-title">Ceviche de Pescado</h5>
+            <p class="card-text">El Ceviche de pescado peruano es el plato tradicional por excelencia en el Perú. Los peruanos lo consideramos nuestro plato bandera y nos sentimos especialmente orgullosos de él.</p>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Receta
+            </button>
+
+            <!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header bg-success">
+            <h4 class="modal-title text-light" id="staticBackdropLabel">Receta</h4>
+            <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <h5>Ingredientes:</h5>
+                <ul>
+                    <li>1 kilo de pescado fresco y de preferencia que no sea grasoso</li>
+                    <li>1 cebolla roja cortada en juliana</li>
+                    <li>1 ají limo o en su defecto ají chili para los que viven fuera y es imposible encontrar el ají limo</li>
+                    <li>10 limones en otros países les llaman limas, son verdes y pequeños</li>
+                    <li>1 camote grande o 2 medianos hervidos batata/moniato</li>
+                    <li>1 lechuga</li>
+                    <li>1 atado de Culantro picado cilantro</li>
+                    <li>1 choclo hervido maíz cocido</li>
+                    <li>Sal y pimienta al gusto</li>
+                </ul>
+            <h5>Preparación:</h5>
+                <ol>
+                    <li>Corta el pescado en cuadrados de 2 a 3 centímetros, esto no es una regla y depende del tipo de pescado, de su textura y de lo grasoso que sea. Es preferible como ya he comentado, elegir un pescado fresco de carne blanca y con cuerpo (fuerte).</li>
+                    <li>En un bol de cristal o de metal frota el ají limón, esto es para que le de el aroma propio de este ají. Luego puedes agregar pequeños trozos de ají limo al gusto, pero con cuidado porque es muy picante.</li>
+                    <li>Agrega el pescado cortado al bol y exprime los limones sobre el pescado directamente. El jugo (zumo) debe casi cubrir el pescado. Añade sal, pimienta al gusto, media cucharita de ajo molido, cebolla y un poco de culantro picado.</li>
+                    <li>Agrega uno o dos cubos de hielo para enfriar la preparación por 3 minutos.</li>
+                    <li>Deja reposar unos minutos, esto depende del gusto de cada persona. También hay pescados que absorben más rápido el limón y no necesitan demasiado tiempo. Repito, todo depende del gusto de cada persona.</li>
+                    <li>Para servir, decoramos el plato con una hoja de lechuga, unos trozos de camote y servimos la preparación en el centro acompañado de choclo.</li>
+                </ol>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+    <div class="card m-5" style="width: 20rem;" category="sierra">
+        <img src="https://i.pinimg.com/originals/1f/79/3b/1f793bf020315cf5de6ca05bb6b76b01.jpg" class="card-img-top" alt="Img Pachamanca">
+        <div class="card-body">
+            <h5 class="card-title">La Pachamanca</h5>
+            <p class="card-text">Es un plato originario del antiguo Perú. Se prepara bajo tierra, en un horno hecho con piedras y que es cubierto por hojas de choclo, varias carnes, verduras y tubérculos y humitas de maíz.</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+                        Receta
+                        </button>
+                
+                            <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel1" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                        <div class="modal-header bg-success">
+                            <h4 class="modal-title text-light" id="staticBackdropLabel1">Receta</h4>
+                            <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>Ingredientes:</h5>
+                                <ul>
+                                    <li>Una taza y media de chincho entero</li>
+                                    <li>Una taza y media de huacatay entero</li>
+                                    <li>1 kilo de carne de chancho</li>
+                                    <li>1 kilo de papa huairo</li>
+                                    <li>1/2 kilo de camote amarillo o morado</li>
+                                    <li>2 choclos</li>
+                                    <li>10 cucharas de ají mirasol</li>
+                                    <li>10 cucharas de ají panca</li>
+                                    <li>3/4 de taza de chicha de jora</li>
+                                    <li>1 cucharada de sal</li>
+                                    <li>1/2 cucharadita de pimienta</li>
+                                    <li>1/2 cucharadita de comino</li>
+                                    <li>Aceite vegetal</li>
+                                </ul>
+                            <h5>Preparación:</h5>
+                                <ol>
+                                    <li>Deshoja el chincho y el huacatay, lava y escurre. Licúa las hojas de chincho con el huacatay, el rocoto verde (opcional) sin pepas y sin venas con un chorrito de aceite vegetal.</li>
+                                    <li>Reserva. Troza la carne que decidas usar. Yo opté por carne de chancho, pero podría ser carne de res, ternera, pollo o usar todas las que quieras al mismo tiempo.</li>
+                                    <li>En un recipiente grande, sazona tu carne con tu licuado de huacatay y chincho, ají panca, ají mirasol, chicha de jora, sal, pimienta y comino.</li>
+                                    <li>Deja macerar como mínimo 2 horas, de preferencia de un día para otro, refrigerado y tapado, así tomará un rico sabor.así</li>
+                                    <li>Toma la olla que usarás y coloca al fondo corontas de choclo como base, la idea es que los alimentos que introducirás no toquen el fondo de la olla.</li>
+                                    <li>Encima pon algunas pancas de choclo y acomodar primero la carne, luego los choclos, las papas, el camote y encima las habas bien lavadas con cáscara.</li>
+                                    <li>El líquido de la carne macerada lo agregarás encima de toda la preparación y taparás con pancas de choclo. Tapa la olla y lleva al fuego.</li>
+                                    <li>Luego que este listo, servir.</li>
+                                </ol>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="card m-5" style="width: 20rem;" category="costa">
+        <img src="https://sabordelobueno.com/wp-content/uploads/2020/11/receta-aji-de-gallina.jpg" class="card-img-top" alt="Img Ají de Gallina">
+        <div class="card-body">
+            <h5 class="card-title">Ají de Gallina</h5>
+            <p class="card-text">Es uno de los platos más populares en el Perú que encanta a la mayoría de los paladares y además es un plato de fácil preparación, que lleva entre sus principales ingredientes nuestro preciado Ají Amarillo.</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                            Receta
+                            </button>
+                    
+                                <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel2" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header bg-success">
+                                <h4 class="modal-title text-light" id="staticBackdropLabel2">Receta</h4>
+                                <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h5>Ingredientes:</h5>
+                                    <ul>
+                                        <li>1 pechuga de pollo o gallina</li>
+                                        <li>1 rama de apio</li>
+                                        <li>1 cebolla pequeña</li>
+                                        <li>1 cebolla roja picada en cuadros pequeños</li>
+                                        <li>1 kg de papa</li>
+                                        <li>1 zanahoria mediana</li>
+                                        <li>70 ml de aceite de oliva</li>
+                                        <li>40 gr ajo molido</li>
+                                        <li>2 hojas de laurel seco</li>
+                                        <li>2 cucharaditas de pimienta blanca</li>
+                                        <li>200 gr de ají amarillo licuado</li>
+                                        <li>50 gr de pecanas peladas</li>
+                                        <li>25 gr de ajonjolí (sésamo) tostado</li>
+                                        <li>3 panes francés o 6 rebanadas de pan de molde sin corteza</li>
+                                        <li>1 cucharadita de kión (jengibre)</li>
+                                        <li>1 cucharadita de comino blanco</li>
+                                        <li>1 cucharadita de orégano en polvo</li>
+                                        <li>1 taza de leche</li>
+                                        <li>8 aceitunas negras</li>
+                                        <li>4 huevos cocidos</li>
+                                        <li>1 cebolla pequeña</li>
+                                        <li>Perejil picado</li>
+                                    </ul>
+                                <h5>Preparación:</h5>
+                                    <ol>
+                                        <li>Primero hierve durante 20 minutos aproximadamente la pechuga de pollo o gallina en una olla con el apio, las hojas de laurel, la cebolla pequeña y la zanahoria.</li>
+                                        <li>Una vez hervido el pollo deshiláchalo o córtalo en trozos pequeños.</li>
+                                        <li>Hierve las papas con un poco de sal, pélalas y resérvalas.</li>
+                                        <li>Remoja el pan o las rebanadas de pan de molde sin corteza en leche.</li>
+                                        <li>Con un poco del caldo licúa las pecanas y el ajonjolí (sésamo).</li>
+                                        <li>En una olla pon un poco de aceite, calienta y fríe los ajos sin que se quemen.</li>
+                                        <li>Agrega la pimienta, el kión (jengibre), el orégano y el laurel. Mezcla bien y agrega las pecanas y el ajonjolí licuado.</li>
+                                        <li>Agrega el ají amarillo y fríe hasta que coja un poco de color, incorpora la cebolla cortada en cuadros pequeños y cocina por 5 minutos aproximadamente o más (dependiendo de la fuerza del fuego).</li>
+                                        <li>A continuación agrega el pollo deshilachado y remueve por espacio de 2 o 3 minutos para que el pollo coja un poco de sabor.</li>
+                                        <li>Ahora agrega el pan remojado con la leche y si la crema está demasiado espesa agrega un poco del caldo de pollo.</li>
+                                        <li>Añade sal al gusto y mueve hasta conseguir una buena consistencia, ni muy espesa ni muy aguada</li>
+                                        <li>Sirve en un plato una base de papas, la crema del ají de gallina encima y decora con perejil, huevos duros y aceitunas negras.</li>
+                                    </ol>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </div>
+    <div class="card m-5" style="width: 20rem;" category="costa">
+        <img src="https://1.bp.blogspot.com/-3LeWlMJOXxQ/YPsCji4aepI/AAAAAAAAOMY/t9iUAy-UD1gFmmQ70ks_RU25XtUpE4p_ACLcBGAsYHQ/s900/Arroz-con-Pollo.jpg" class="card-img-top" alt="Img Arroz con Pollo">
+        <div class="card-body">
+            <h5 class="card-title">Arroz con Pollo</h5>
+            <p class="card-text">Es un clásico de la cocina peruana de delicioso sabor gracias al culantro y con un aroma inconfundible capaz de despertar el apetito de muchos. Algunos lo prefieren con Papa a la Huancaina y otros con una salsa criolla.</p>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+                                        Receta
+                                        </button>
+                                
+                                            <!-- Modal -->
+                                <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel3" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                        <div class="modal-header bg-success">
+                                            <h4 class="modal-title text-light" id="staticBackdropLabel3">Receta</h4>
+                                            <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h5>Ingredientes:</h5>
+                                                <ul>
+                                                    <li>1 cebolla picada en cuadros muy pequeños</li>
+                                                    <li>1 pimiento cortado en juliana</li>
+                                                    <li>1 1/2 cucharadas de ají amarillo</li>
+                                                    <li>1 cucharada de ají colorado (panca)</li>
+                                                    <li>1 1/2 cucharadas de ajo molido</li>
+                                                    <li>1/2 taza de aceite vegetal</li>
+                                                    <li>1/2 taza de alverjas (guisantes)</li>
+                                                    <li>2 zanahorias picadas en cuadros pequeños</li>
+                                                    <li>1 taza de cerveza negra si es cerveza Cuzqueña mejor</li>
+                                                    <li>8 piezas de pollo</li>
+                                                    <li>1 1/2 tazas de culantro molido (cilantro)</li>
+                                                    <li>4 tazas de arroz blanco</li>
+                                                    <li>1 cubo de caldo de pollo Knor o Maggi por ejemplo</li>
+                                                    <li>Comino, sal y pimienta</li>
+                                                </ul>
+                                            <h5>Preparación:</h5>
+                                                <ol>
+                                                    <li>Condimenta las piezas de pollo con sal, pimienta y comino antes de freírlas. Mezcla bien para que ambos condimentos estén en todas las partes del pollo.</li>
+                                                    <li>Pon el aceite en una olla y cuando esté caliente agrega las piezas de pollo.</li>
+                                                    <li>Fríelas un poco hasta que queden un poco doradas pero no completamente. Retíralas y ponlas dentro de un recipiente cubierto para que no se enfríen.</li>
+                                                    <li>Mientras se fríe el pollo, aprovecha para licuar el culantro. Licúa las hojas del culantro con un poco de agua y un poquito de cerveza (no demasiado líquido). Si tienes caldo de pollo lo puedes utilizar en lugar del agua y queda mejor.</li>
+                                                    <li>En la misma olla donde has frito las piezas de pollo agrega la cebolla, el ajo molido, el ají amarillo, el ají colorado, sal, pimienta y el cubo de caldo de pollo.</li>
+                                                    <li>Fríe todo durante un par de minutos hasta que la cebolla quede dorada, agrega el culantro licuado, fríe todo moviendo para que no se queme.</li>
+                                                    <li>Después de un minuto más o menos agrega las piezas de pollo para terminar de freírlas junto con todo el aderezo y agrega una taza la cerveza negra. El resto es para ti 🙂.</li>
+                                                    <li>Espera un minuto y agrega 3 tazas de agua (hasta el momento vamos 4 tazas de líquidos incluyendo la cerveza) y espera a que termine de cocinar completamente el pollo.</li>
+                                                    <li>Una vez que el pollo esté cocinado lo retiramos en un recipiente cerrado para que no se enfríen. Agrega 3 tazas de agua, las zanahorias picadas, las alverjas y el arroz. En total han sido 7 tazas de líquido (agua y cerveza) para 4 tazas de arroz. Personalmente siempre pongo un poco menos del doble de las tazas de arroz para que quede el arroz graneado.</li>
+                                                    <li>Mueve de rato en rato para que el arroz no se pegue en el fondo y cuando haya reducido el líquido baja la temperatura para cocinar a fuego lento por aproximadamente 20 minutos.</li>
+                                                    <li>5 minutos antes de completar los 20 minutos de cocción del arroz coloca las piezas de pollo y el pimiento cortado en juliana encima de todo y vuelve a tapar la olla.</li>
+                                                    <li>Espera a que se cumpla el tiempo y a disfrutar.</li>
+                                                </ol>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+        </div>
+    </div>
+    <div class="card m-5" style="width: 20rem;" category="costa">
+        <img src="https://decomidaperuana.com/wp-content/uploads/2019/10/seco-de-carne-ingredientes.jpg" class="card-img-top" alt="Img Seco de Carne">
+        <div class="card-body">
+            <h5 class="card-title">Seco de Carne</h5>
+            <p class="card-text">Este platillo principal es tradicional de nuestro Perú y, por este motivo, es un emblema de nuestra rica gastronomía. Es su preparación con ajíes típicos de la nación la que aportan gran sustancia y sabor a la carne que lo requiera.</p>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">
+                                        Receta
+                                        </button>
+                                
+                                            <!-- Modal -->
+                                <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel4" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                        <div class="modal-header bg-success">
+                                            <h4 class="modal-title text-light" id="staticBackdropLabel4">Receta</h4>
+                                            <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h5>Ingredientes:</h5>
+                                                <ul>
+                                                    <li>1 kilo de carne cortada en trozos</li>
+                                                    <li>2 cebollas rojas cortadas en cuadritos</li>
+                                                    <li>1 cucharada de ajo molido</li>
+                                                    <li>1/2 taza de ají amarillo licuado</li>
+                                                    <li>1/2 taza de ají mirasol licuado</li>
+                                                    <li>1 vaso de cerveza rubia o chicha de jora</li>
+                                                    <li>1 chorro de aceite</li>
+                                                    <li>1 vaso de culantro licuado</li>
+                                                    <li>1 taza de arvejas crudas</li>
+                                                    <li>Sal y pimienta al gusto</li>
+                                                    <li>Comino al gusto</li>
+                                                    <li>Agua</li>
+                                                    <li>4 papas cortadas en dos</li>
+                                                    <li>2 zanahorias crudas cortadas en rodajas</li>
+                                                </ul>
+                                            <h5>Preparación:</h5>
+                                                <ol>
+                                                    <li>En la olla agrega un chorro de aceite y coloca el kilo de carne cortada en trozos a dorar y retira.</li>
+                                                    <li>Luego, en la olla ya desocupada se realiza un aderezo con las dos cebollas rojas cortadas en cuadritos. Deja cocinar por aproximadamente 5 minutos.</li>
+                                                    <li>Ahora, agrega una cucharada de ajo molido y deja cocinar de nuevo por al menos un par de minutos.</li>
+                                                    <li>Seguido, agrega media taza de ají amarillo licuado y media taza de ají mirasol licuado. deja cocinar por un aproximado de 5 minutos y mezcla todo muy bien a fuego medio.</li>
+                                                    <li>Luego, añade un vaso de cerveza rubia o chicha de jora. Una vez listo, agrega un vaso de culantro bien licuado y deja hervir.</li>
+                                                    <li>A continuación, agrega la sal, la pimienta y el comino al gusto. Baja el fuego e incorpora la carne. Cubre con agua y tapa, deja cocer a fuego bajo hasta dejar suave la carne.</li>
+                                                    <li>Pasado el tiempo, al llegar la carne a su punto se añade una taza de arvejas crudas, cuatro papas cortadas en dos y dos zanahorias crudas cortadas en rodajas.</li>
+                                                    <li>Para culminar la preparación, al verificar que las papas estén bien cocidas, se retira el fuego y se deja reposar un poco. Rectifica sazón y sirve.</li>
+                                                </ol>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+        </div>
+    </div>
+    <div class="card m-5" style="width: 20rem;" category="costa">
+        <img src="https://www.comidasperuanas.vip/wp-content/uploads/2020/03/carapulcra_.jpg" class="card-img-top" alt="Img Carapulcra">
+        <div class="card-body">
+            <h5 class="card-title">Carapulcra</h5>
+            <p class="card-text">La Carapulcra calentita con yuca o con arroz es muy popular en todo el Perú, pero en especial en las ciudades que se encuentran ubicadas al sur de Lima, como Cañete, Chincha, Ica y otras.</p>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop5">
+                                        Receta
+                                        </button>
+                                
+                                            <!-- Modal -->
+                                <div class="modal fade" id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel5" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                        <div class="modal-header bg-success">
+                                            <h4 class="modal-title text-light" id="staticBackdropLabel5">Receta</h4>
+                                            <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h5>Ingredientes:</h5>
+                                                <ul>
+                                                    <li>1/2 kg de papa seca previamente tostada ligeramente y remojada por un par de horas.</li>
+                                                    <li>1/2 kg de carne de chancho (cerdo) o pollo</li>
+                                                    <li>50 gr de maní (cacahuete) tostado y molido</li>
+                                                    <li>1 cebolla roja grande cortada en cuadritos</li>
+                                                    <li>4 cucharadas de ají panca molido</li>
+                                                    <li>1/4 de vaso de vino tinto dulce</li>
+                                                    <li>1/2 taza de aceite</li>
+                                                    <li>1 cucharada pequeña de ajo molido</li>
+                                                    <li>1 taza de caldo de carne</li>
+                                                    <li>1/2 kg de arroz blanco preparado para acompañar</li>
+                                                    <li>Perejil, comino, sal y pimienta</li>
+                                                </ul>
+                                            <h5>Preparación:</h5>
+                                                <ol>
+                                                    <li>Primero fríe la carne de chancho con un poco de aceite. El objetivo es dorarlo un poco pero sin llegar a freírlo del todo. Luego retíralo y resérvalo en un recipiente cerrado para conservar su calor.</li>
+                                                    <li>A continuación en una olla calienta un poco de aceite y agrega la cebolla roja cortada en cuadros, cuando vaya cambiando el color de la cebolla agrega el ajo molido, el ají colorado y déjalo que se cocine un poco.</li>
+                                                    <li>Ahora agrega la carne de chancho frita, mezcla bien, agrega un poco de comino, pimienta y déjalo freír un poco vigilando para que no se te queme.</li>
+                                                    <li>Después agrega la papa seca previamente remojada y mezcla todo. Ojo si por alguna razón la papa seca no está suave o no quieres esperar mucho, puedes cocerla en agua durante unos minutos.</li>
+                                                    <li>Luego agrega la taza de caldo de carne y el vino, mueve todo y déjalo cocinar unos 10 minutos a fuego medio.</li>
+                                                    <li>Corrige la sal y echa el maní tostado y molido, mueve y déjalo 5 minutos más. Si ves que espesa demasiado agrega un poco de agua caliente. Atención, mueve de rato en rato para que no se pegue en el fondo y listo.</li>
+                                                </ol>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+        </div>
+    </div>
+    <div class="card m-5" style="width: 20rem;" category="costa">
+        <img src="https://images-gmi-pmc.edge-generalmills.com/1fdf2172-1313-49e0-b964-9c2cbb484672.jpg" class="card-img-top" alt="Img Causa Rellena">
+        <div class="card-body">
+            <h5 class="card-title">Causa Rellena</h5>
+            <p class="card-text">Hablar de la Causa Rellena es hablar de uno de los platos más tradicionales de la cocina peruana. Cuenta la historia que este plato ya se consumía en la época precolombina.</p>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop6">
+                                        Receta
+                                        </button>
+                                
+                                            <!-- Modal -->
+                                <div class="modal fade" id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel6" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                        <div class="modal-header bg-success">
+                                            <h4 class="modal-title text-light" id="staticBackdropLabel6">Receta</h4>
+                                            <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h5>Ingredientes:</h5>
+                                                <ul>
+                                                    <li>1 de papa (patata) de preferencia amarilla</li>
+                                                    <li>4 limones (limas), verdes pequeños</li>
+                                                    <li>2 ajíes amarillos</li>
+                                                    <li>Aceite de girasol</li>
+                                                    <li>Sal y pimienta</li>
+                                                    <li>1/2 kg de zanahorias</li>
+                                                    <li>1/2 kg de arvejas (guisantes)</li>
+                                                    <li>1 pechuga de pollo</li>
+                                                    <li>Mayonesa</li>
+                                                    <li>1 palta (aguacate)</li>
+                                                    <li>3 huevos duros</li>
+                                                    <li>Aceitunas negras</li>
+                                                    <li>1 lechuga</li>
+                                                    <li>Perejil</li>
+                                                </ul>
+                                            <h5>Preparación:</h5>
+                                                <ol>
+                                                    <li>Hierve las papas con una rodaja de limón para darle un toque ácido. Vigila que no se cuezan demasiado y no se deshagan.</li>
+                                                    <li>Péla las papas cuando todavía estén calientes y prénsa hasta conseguir una masa uniforme sin grumos. deja enfriar.</li>
+                                                    <li>Cuando las papas estén frías agrega el jugo del limón, el ají amarillo licuado (sin venas), sal y pimienta poco a poco y ve probando el grado de acidez.</li>
+                                                    <li>Si la masa está muy seca agrega un poco de aceite y mezclar con las manos.</li>
+                                                    <li>Hierve la pechuga de pollo lo suficiente hasta que esté cocida y desmenúzala o córtala en trozos pequeños.</li>
+                                                    <li>Hierve las zanahorias y pícalas en cuadros pequeños.</li>
+                                                    <li>Hierve las arvejas y resérvalas.</li>
+                                                    <li>Mezcla el pollo deshilachado, las zanahorias y las arvejas con mayonesa, sal y pimienta al gusto.</li>
+                                                    <li>Si deseas agrégale unas gotas de limón (no muchas), esto le dará un sabor ácido al relleno.</li>
+                                                    <li>Para servir utiliza un molde de cocina de aluminio, un vaso o tus propias manos.</li>
+                                                    <li>Primero coloca una capa de la masa de la causa.</li>
+                                                    <li>Luego una capa de palta (aguacate) cortada. Este paso es opcional.</li>
+                                                    <li>Una capa más de la masa.</li>
+                                                    <li>Ahora pon el relleno de manera generosa.</li>
+                                                    <li>Y para terminar una capa más de la masa.</li>
+                                                </ol>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+        </div>
+    </div>
+    <div class="card m-5" style="width: 20rem;" category="costa">
+        <img src="https://iperu.pe/wp-content/uploads/2020/01/papa-rellena-de-carne_800x533.jpg" class="card-img-top" alt="Img Papa Rellena">
+        <div class="card-body">
+            <h5 class="card-title">Papa Rellena</h5>
+            <p class="card-text">La receta de Papa Rellena está hecha a base de papa con un relleno de carne. En nuestro país tenemos la suerte de contar con la mayor cantidad de variedades de papas del mundo, ya que el Perú cuenta con 3000 tipos de papas de las 5000 que existen.</p>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop7">
+                                        Receta
+                                        </button>
+                                
+                                            <!-- Modal -->
+                                <div class="modal fade" id="staticBackdrop7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel7" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                        <div class="modal-header bg-success">
+                                            <h4 class="modal-title text-light" id="staticBackdropLabel7">Receta</h4>
+                                            <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h5>Ingredientes:</h5>
+                                                <ul>
+                                                    <li>1 kg de papa (patata) si es amarilla mejor</li>
+                                                    <li>400 gr de carne de vaca picada en trozos pequeñitos o carne molida.</li>
+                                                    <li>1 cebolla roja grande cortada en cuadros muy pequeños</li>
+                                                    <li>2 tomate grande cortado en cuadros muy pequeños</li>
+                                                    <li>100 gr de pasas opcional</li>
+                                                    <li>2 huevos duros picados</li>
+                                                    <li>2 cucharadas de ají panca (colorado)</li>
+                                                    <li>5 aceitunas negras picadas</li>
+                                                    <li>2 cucharadas de perejil picado</li>
+                                                    <li>1 cucharada de ajo picado</li>
+                                                    <li>Aceite vegetal u oliva</li>
+                                                    <li>Sal, pimienta blanca y orégano</li>
+                                                </ul>
+                                            <h5>Preparación:</h5>
+                                                <ol>
+                                                    <li>Primero calienta una olla alta o sartén grande y agrega 2 cucharadas de aceite y la cebolla picada. Después de dos minutos agrega el ajo picado y mueve para que no se quemen. Luego agrega la carne y fríela por unos minutos.</li>
+                                                    <li>Cuando la carne haya reducido el agua y cambiado de color, agrega el tomate picado. Después condimenta la carne, agrega pimienta blanca, un poco de sal, un poquito de comino y orégano, ají panca y mezcla todo. Reduce el fuego y tápalo para que se termine de freír por dos minutos más o menos.</li>
+                                                    <li>Ahora puedes agregar las pasas. Agrega las aceitunas, los huevos duros picados, el perejil y mezcla todo.</li>
+                                                    <li>Hierve las papas en una olla grande. Cuando estén listas, retíralas y pélalas. Cuando estén todas peladas y todavía calientes, tienes que aplastarlas para conseguir crear una masa, puedes utilizar un prensador de papas, un aplastador o por último un tenedor.</li>
+                                                    <li>Ahora que ya tienes toda la papa aplastada échale un poco de sal, pimienta blanca, mezcla todo, prueba si está bien de sabor y déjalas enfriar.</li>
+                                                    <li>Cuando estén frías es el momento de armarlas. Úntate las manos con harina y coge un poco de papas y ponla en la palma de una mano y con la otra mano haz presión para darle una forma ovalada.</li>
+                                                    <li>Una vez tengas la forma preparada coloca el relleno, un poco de huevo duro, aceituna y ciérrala con mucho cuidado ajustando los bordes con la yema de los dedos y dándole vueltas con tus dos manos para que quede uniforme por todas partes.</li>
+                                                    <li>Agrega el ají amarillo y fríe hasta que coja un poco de color, incorpora la cebolla cortada en cuadros pequeños y cocina por 5 minutos aproximadamente o más (dependiendo de la fuerza del fuego).</li>
+                                                    <li>A continuación agrega el pollo deshilachado y remueve por espacio de 2 o 3 minutos para que el pollo coja un poco de sabor.</li>
+                                                    <li>Ahora agrega el pan remojado con la leche y si la crema está demasiado espesa agrega un poco del caldo de pollo.</li>
+                                                    <li>Añade sal al gusto y mueve hasta conseguir una buena consistencia, ni muy espesa ni muy aguada</li>
+                                                    <li>Sirve en un plato una base de papas, la crema del ají de gallina encima y decora con perejil, huevos duros y aceitunas negras.</li>
+                                                </ol>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+        </div>
+    </div>
+    <div class="card m-5" style="width: 20rem;" category="costa">
+        <img src="https://decomidaperuana.com/wp-content/uploads/2020/10/lomo-saltado.jpg" class="card-img-top" alt="Img Lomo Saltado">
+        <div class="card-body">
+            <h5 class="card-title">Lomo Saltado</h5>
+            <p class="card-text">El Lomo Saltado está sin duda entre los principales y más solicitados platos de la gastronomía peruana y ocupa un lugar especial en la interminable lista de potajes que nacen gracias a la fusión de la cocina peruana con otras cocinas del mundo.</p>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop8">
+                                        Receta
+                                        </button>
+                                
+                                            <!-- Modal -->
+                                <div class="modal fade" id="staticBackdrop8" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel8" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                        <div class="modal-header bg-success">
+                                            <h4 class="modal-title text-light" id="staticBackdropLabel8">Receta</h4>
+                                            <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h5>Ingredientes:</h5>
+                                                <ul>
+                                                    <li>600 gr de lomo de res</li>
+                                                    <li>1 cebolla roja cortada en gajos</li>
+                                                    <li>2 tomates cortados en gajos</li>
+                                                    <li>1 cda pequeña de pimienta negra molida</li>
+                                                    <li>5 tallos de cebolla china cebollín en corte sesgado</li>
+                                                    <li>1 ají amarillo cortado en tiras sin venas</li>
+                                                    <li>Aceite vegetal</li>
+                                                    <li>800 gr de arroz blanco cocinado</li>
+                                                    <li>400 gr de papas (patatas) fritas en bastones de preferencia papas amarillas</li>
+                                                    <li>200 ml de caldo de carne</li>
+                                                    <li>100 ml de sillao salsa de soja</li>
+                                                    <li>Un poco de hojas de culantro (cilantro picado)</li>
+                                                    <li>50 ml de vinagre</li>
+                                                    <li>1 cda de ajo molido en pasta</li>
+                                                    <li>1/4 cda de orégano seco molido</li>
+                                                    <li>1/4 cda de comino</li>
+                                                    <li>Sal al gusto</li>
+                                                </ul>
+                                            <h5>Preparación:</h5>
+                                                <ol>
+                                                    <li>El Lomo Saltado es un plato que se debe servir inmediatamente, es por eso que recomiendo tener las papas fritas listas o freírlas calculando el tiempo para que estén listas justo antes de terminar de hacer el Lomo Saltado. Las papas fritas de preferencia que sean papas amarillas por su sabor y por lo crocante que quedan.</li>
+                                                    <li>Corta el lomo en trozos (bastones) más o menos gruesos (3cm x 1cm) y condiméntalos con ajo molido, comino, orégano, sal, pimienta y una cuchara de vinagre. Déjalo reposar unos 10 minutos para que coja sabor. Calienta la sartén a fuego alto con un poco de aceite</li>
+                                                    <li>Cuando veas que empieza a salir un poquito de humo, entonces agrega la carne y fríela por unos segundos, el tiempo dependerá de que tan caliente este la sartén. A continuación resérvala en un bol y tápala para que conserve el calor.</li>
+                                                    <li>Ahora en la misma sartén agrega la cebolla picada, el tomate, el ají amarillo y un poquito de aceite. Fríe todo por unos segundos y agrega un poco de caldo de carne, salsa de soja (sillao) y el vinagre. Agrega la carne que habías reservado, mezcla todo con movimientos de sartén (sin utensilio para no maltratar el tomate) y después de unos 30 segundos más o menos agrega la cebolla china y finalmente un poco de culantro picado (cilantro).</li>
+                                                    <li>El Lomo Saltado tiene que estar jugoso, por eso, si es necesario corrige agregando un poco de caldo de carne.</li>
+                                                    <li>Sirve en un plato casi la totalidad del lomo y deja un poco para mezclar con las papas fritas. Agrega las papas fritas al resto de lomo saltado en la sartén, mézclalo y vuelve a servir todo encima.</li>
+                                                    <li>En el Perú nos encanta el arroz, así que este plato también va acompañado de arroz blanco.</li>
+                                                </ol>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+        </div>
+    </div>
+    <div class="card m-5" style="width: 20rem;" category="selva">
+        <img src="https://static5.depositphotos.com/1010142/533/i/600/depositphotos_5331302-stock-photo-traditional-peruvian-food-called-juane.jpg" class="card-img-top" alt="Img Juane">
+        <div class="card-body">
+            <h5 class="card-title">Juane de gallina</h5>
+            <p class="card-text">El juane de arroz o juane de gallina como lo llaman algunos, es una comida típica y tradicional de la selva peruana, principalmente de los departamentos de San Martín y Loreto.</p>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop9">
+                                        Receta
+                                        </button>
+                                
+                                            <!-- Modal -->
+                                <div class="modal fade" id="staticBackdrop9" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel9" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                        <div class="modal-header bg-success">
+                                            <h4 class="modal-title text-light" id="staticBackdropLabel9">Receta</h4>
+                                            <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h5>Ingredientes:</h5>
+                                                <ul>
+                                                    <li>6 Presas de gallina</li>
+                                                    <li>1 ½ Kilo de arroz</li>
+                                                    <li>6 Huevos duros</li>
+                                                    <li>6 Huevos batidos</li>
+                                                    <li>Aceite</li>
+                                                    <li>Hojas de bijao</li>
+                                                    <li>Cebolla</li>
+                                                    <li>Aceituna</li>
+                                                    <li>Pimienta</li>
+                                                    <li>Comino</li>
+                                                    <li>Orégano seco</li>
+                                                    <li>Sazonador</li>
+                                                    <li>Palillo o azafrán</li>
+                                                    <li>Sal al gusto</li>
+                                                </ul>
+                                            <h5>Preparación:</h5>
+                                                <ol>
+                                                    <li>Para preparar este delicioso juane de gallina debemos de dorar en el aceite caliente la cebolla, el ajo, el azafrán y orégano seco molido, agregar las presas de gallina la pimienta y comino agregar agua y sal para que la gallina hierva durante una hora, sacar las presas de gallina, agregar al caldo el arroz y dejar hervir hasta que el arroz granee.</li>
+                                                    <li>Una vez que el arroz este listo dejar enfriar.</li>
+                                                    <li>Al arroz bañarlo con los 6 huevos crudos y agregar el sazonador.</li>
+                                                    <li>Pasar las hojas de bijao por agua tibia para suavizarlo. En la hoja agregar el arroz (cantidad que se desee), la presa de gallina, un huevo duro aceituna y empaquetar bien como un tamal con una soguilla o pita.</li>
+                                                    <li>Hacer hervir el juane de gallina durante media hora.</li>
+                                                    <li>Una vez listo este delicioso juane de gallina servir acompañado de su tacacho, plátanos fritos o yuca sancochado.</li>
+                                                </ol>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+        </div>
+    </div>
+    <div class="card m-5" style="width: 20rem;" category="selva">
+        <img src="https://mirecetadehoy.com/wp-content/uploads/2020/05/tacacho-con-cecina_680x454.jpg" class="card-img-top" alt="Img Tacacho con Cecina">
+        <div class="card-body">
+            <h5 class="card-title">Tacacho con Cecina</h5>
+            <p class="card-text">Es el favorito de muchas personas que buscan degustar su paladar con un platillo que no decepciona puesto que su combinación de ingredientes lo convierte en una fusión de sabores casi perfecta</p>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop10">
+                                        Receta
+                                        </button>
+                                
+                                            <!-- Modal -->
+                                <div class="modal fade" id="staticBackdrop10" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel10" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                        <div class="modal-header bg-success">
+                                            <h4 class="modal-title text-light" id="staticBackdropLabel10">Receta</h4>
+                                            <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h5>Ingredientes:</h5>
+                                                <ul>
+                                                    <li>10 plátanos verdes</li>
+                                                    <li>4 cucharadas de manteca</li>
+                                                    <li>3 chorizos</li>
+                                                    <li>250 gr de chicharrón cortado en pequeños trozos</li>
+                                                    <li>500 gr de cecina de cerdo</li>
+                                                </ul>
+                                            <h5>Preparación:</h5>
+                                                <ol>
+                                                    <li>Primero, prepara el tacacho que es prácticamente lo único que te tomará un poco de tiempo. Pela los plátanos y córtalo en trozos. En una sartén coloca aceite y déjalo calentar. Listo esto, coloca el plátano y revisa hasta que estén bien cocidos por fuera y por dentro.</li>
+                                                    <li>Tritura con un mazo cuando esto esté listo y agrega la manteca y luego el chicharrón en trozos pequeños. Es recomendable que hagas este proceso con las manos para que formes las bolas del Tacacho en el tamaño que desees. Fríe en una sartén estas bolas de plátano enmantecados.</li>
+                                                    <li>En otra sartén, fríe la cecina hasta que quede a tu gusto.</li>
+                                                    <li>Teniendo ambos, la comida está lista, sirve en un plato un chorizo, dos bolas de Tacacho y la porción de Cecina.</li>
+                                                </ol>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+        </div>
+    </div>
+    <div class="card m-5" style="width: 20rem;" category="sierra">
+        <img src="https://www.iperu.org/wp-content/uploads/2018/06/cuy-chactado.jpg" class="card-img-top" alt="Img Cuy Chactado">
+        <div class="card-body">
+            <h5 class="card-title">Cuy Chactado</h5>
+            <p class="card-text">El Cuy Chactado es un exótico plato típico, originado en la región de Cajamarca y popularizado en Arequipa. Esta entrada lleva como base el cuy, un animal extendido en el mundo que es particularmente común en el Perú.</p>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop11">
+                                        Receta
+                                        </button>
+                                
+                                            <!-- Modal -->
+                                <div class="modal fade" id="staticBackdrop11" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel11" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                        <div class="modal-header bg-success">
+                                            <h4 class="modal-title text-light" id="staticBackdropLabel11">Receta</h4>
+                                            <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h5>Ingredientes:</h5>
+                                                <ul>
+                                                    <li>1 cuy</li>
+                                                    <li>¼ de taza de ají panca molido (50 gr)</li>
+                                                    <li>1 cdta de orégano (5 gr)</li>
+                                                    <li>Sal al gusto</li>
+                                                    <li>½ taza de chicha de jora (125 ml)</li>
+                                                    <li>Jugo de 1 limón (30 gr)</li>
+                                                    <li>1 cdta de hierbabuena picada (5 gr)</li>
+                                                    <li>Aceite para freír Cocinero</li>
+                                                </ul>
+                                            <h5>Preparación:</h5>
+                                                <ol>
+                                                    <li>Colocar en un tazón la chicha, el ají, el jugo de limón, el orégano, la hierbabuena y la sal. Dejar macerar por 2 a 3 horas.</li>
+                                                    <li>Poner aceite para freír en una olla profunda. Escurrir el cuy, colocándolo dentro con la piel sobre el aceite.</li>
+                                                    <li>Ubicar encima una piedra bien seca y freír hasta que la piel esté dorada y crocante.</li>
+                                                    <li>Dar vuelta al cuy y cocinar por el otro lado de la misma forma. Retirar y servir con papas fritas en el mismo aceite en el que se cocinó el cuy.</li>
+                                                    <li>Si desea, reemplace el cuy por conejo.</li>
+                                                </ol>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+        </div>
+    </div>
+    <div class="card m-5" style="width: 20rem;" category="costa">
+        <img src="https://minichef.b-cdn.net/assets/03/a9/eb/9a/2903a9eb9a-294d-46fb-939d-99a0cc1602cc.jpg" class="card-img-top" alt="Img Tallarines Verdes">
+        <div class="card-body">
+            <h5 class="card-title">Tallarines Verdes</h5>
+            <p class="card-text">Los tallarines verdes en el Perú nacieron de la necesidad de los inmigrantes italianos por disfrutar su famoso pasta al pesto. Al no contar con todos los ingredientes, ellos intentaron prepararlo lo más parecido posible y es de esta manera como se crea este delicioso potaje.</p>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop12">
+                                        Receta
+                                        </button>
+                                
+                                            <!-- Modal -->
+                                <div class="modal fade" id="staticBackdrop12" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel12" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                        <div class="modal-header bg-success">
+                                            <h4 class="modal-title text-light" id="staticBackdropLabel12">Receta</h4>
+                                            <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h5>Ingredientes:</h5>
+                                                <ul>
+                                                    <li>1 kg de tallarines (espagueti)</li>
+                                                    <li>300 gr de albahaca fresca</li>
+                                                    <li>1/2 kg de espinacas frescas</li>
+                                                    <li>400 gr de queso fresco</li>
+                                                    <li>120 gr de queso parmesano</li>
+                                                    <li>200 gr de pecanas molidas</li>
+                                                    <li>1 taza de leche evaporada</li>
+                                                    <li>1/2 taza de aceite</li>
+                                                    <li>2 dientes de ajo</li>
+                                                    <li>Sal y pimienta</li>
+                                                </ul>
+                                            <h5>Preparación:</h5>
+                                                <ol>
+                                                    <li>Primero pon a hervir el agua con un poco de sal y cuando esté caliente agrega la pasta hasta que quede “al dente”, el tiempo depende del tipo de pasta y la marca, pero suele ser entre 8 a 10 minutos. Ve probando hasta que esté listo.</li>
+                                                    <li>Mientras la pasta se cocina pon una olla con agua y cuando esté hirviendo agrega la albahaca por un minuto, luego retírala y quítale el agua.</li>
+                                                    <li>En una sartén con un poco de aceite fríe ligeramente las hojas de espinacas y retíralas.</li>
+                                                    <li>A continuación agrega 1/2 taza de aceite a la licuadora, leche evaporada, y licúa poco a poco las espinacas. Cuando hayas obtenido la crema, agrega la albahaca y licuar otra vez.</li>
+                                                    <li>Una vez esté toda la espinaca y la albahaca licuada agrega los dos dientes de ajo, el queso fresco, el queso parmesano, las pecanas, sal, pimienta y continua licuando hasta que obtengas la salsa.</li>
+                                                    <li>Ahora que ya tienes los tallarines hervidos y la salsa, sólo te queda mezclarlos. En una sartén agrega una cuchara de aceite de oliva y cuando esté un poco caliente agrega los tallarines y a continuación la salsa verde.</li>
+                                                    <li>Remueve hasta que los tallarines cambien de color y adquieran un tono verde completamente.</li>
+                                                </ol>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+        </div>
+    </div>
+    <div class="card m-5" style="width: 20rem;" category="costa">
+        <img src="https://sazonadoresbatan.com/wp-content/uploads/2020/11/chaufa-de-pollo.png" class="card-img-" alt="Img Arroz Chaufa">
+        <div class="card-body">
+            <h5 class="card-title">Arroz Chaufa</h5>
+            <p class="card-text">El Arroz Chaufa sin duda debe de ser uno de los platos más consumidos por los peruanos. Este plato, es una de las tantas fusiones y probablemente el más conocido de la cocina china-peruana.</p>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop13">
+                                        Receta
+                                        </button>
+                                
+                                            <!-- Modal -->
+                                <div class="modal fade" id="staticBackdrop13" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel13" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                        <div class="modal-header bg-success">
+                                            <h4 class="modal-title text-light" id="staticBackdropLabel13">Receta</h4>
+                                            <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h5>Ingredientes:</h5>
+                                                <ul>
+                                                    <li>4 huevos</li>
+                                                    <li>1 pechuga de pollo</li>
+                                                    <li>1 paquete de hot-dog salchicha</li>
+                                                    <li>2 cucharadas de kion picado jengibre</li>
+                                                    <li>2 cucharaditas de ajo picado</li>
+                                                    <li>½ taza de pimiento picado</li>
+                                                    <li>4 tazas de arroz</li>
+                                                    <li>½ taza de sillao (salsa de soja)</li>
+                                                    <li>¼ taza de aceite de ajonjolí de preferencia</li>
+                                                    <li>1 taza de cebolla china picada</li>
+                                                    <li>Aceite</li>
+                                                    <li>Sal</li>
+                                                </ul>
+                                            <h5>Preparación:</h5>
+                                                <ol>
+                                                    <li>Bate los huevos en un bol y fríelos de manera que termine en una tortilla. Córtala en pequeños cuadritos y déjala a un costado para mezclarlo luego con el arroz.</li>
+                                                    <li>Prepara el arroz como acostumbras hacerlo y déjalo también a un lado.</li>
+                                                    <li>En una sartén grande con un poco de aceite a fuego intermedio saltea la pechuga de pollo sazonada con sal y cortada en pequeños cuadrados, luego de que ya esté listo el pollo agrega el hot dog picado en rodajas.</li>
+                                                    <li>Agrega el kion y ajo, dora esto durante unos segundos.</li>
+                                                    <li>Incorpora el pimiento y el arroz. Mezcla y saltea.</li>
+                                                    <li>Vierte el sillao y el aceite de ajonjolí. Saltea nuevamente hasta que el arroz esté ahumado.</li>
+                                                    <li>Finalmente, añade la tortilla picada en trozos y la cebolla china. Saltea y sirve.</li>
+                                                </ol>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+        </div>
+    </div>
+    <div class="card m-5" style="width: 20rem;" category="sierra">
+        <img src="https://lascomidasperuanas.com/wp-content/uploads/2021/07/Receta-de-caldo-de-cordero-peruano.jpg" class="card-img-top" alt="Img Caldo de cordero">
+        <div class="card-body">
+            <h5 class="card-title">Caldo de cordero</h5>
+            <p class="card-text">En nuestro país una de las cosas más resaltantes es nuestra distinguida gastronomía. Exhibiendo siempre entre maravillosa atención y ricos platos principales, las contundentes entradas.</p>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop14">
+                                        Receta
+                                        </button>
+                                
+                                            <!-- Modal -->
+                                <div class="modal fade" id="staticBackdrop14" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel14" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                        <div class="modal-header bg-success">
+                                            <h4 class="modal-title text-light" id="staticBackdropLabel14">Receta</h4>
+                                            <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h5>Ingredientes:</h5>
+                                                <ul>
+                                                    <li>1 cabeza de cordero</li>
+                                                    <li>150 gramos de mote pelado</li>
+                                                    <li>1 ají mirasol seco</li>
+                                                    <li>1 cucharadita de hierbabuena</li>
+                                                    <li>1 cucharada de rocoto molido</li>
+                                                    <li>Jugo de 1 limón</li>
+                                                    <li>1 cucharada de cebolla china picada finamente</li>
+                                                    <li>Paico</li>
+                                                    <li>Papas al gusto</li>
+                                                    <li>Agua</li>
+                                                    <li>Sal al gusto</li>
+                                                </ul>
+                                            <h5>Preparación:</h5>
+                                                <ol>
+                                                    <li>Lava y corta una cabeza de cordero en trozos y en una olla con abundante agua coloca los trozos junto a los ciento cincuenta gramos de mote pelado y bien lavado. Deja cocinar a fuego bajo hasta que el mote este en su punto retirando la espuma desplegada por los trozos de cordero hacia la superficie.</li>
+                                                    <li>Seguido, sazona con sal al gusto y prueba el caldo para verificar, incorpora un ají mirasol seco entero y papas al gusto bien peladas y picadas en cuadros.</li>
+                                                    <li>Luego, deshuesa los trozos de cabeza de cordero, recuperando de esta forma la carne de los mismos y devuelve la carne al caldo. Deja cocer por al menos unos quince minutos.</li>
+                                                    <li>Pasado el tiempo, agrega paico al gusto, una cucharadita de hierbabuena, una cucharada de rocoto molido, el jugo de un limón y una cucharada de cebolla china picada finamente. Mueve hasta integrar todo muy bien, rectifica sazón y sirve.</li>
+                                                </ol>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="assets/js/function.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>

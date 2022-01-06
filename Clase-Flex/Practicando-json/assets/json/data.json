@@ -1,0 +1,22 @@
+{
+    "nombre": "Andrea",
+    "apellido-paterno": "Bujaico",
+    "apellido-materno": "Guerra",
+    "lenguajes": ["JavaScript","Python","C++"],
+    "edad": 16,
+    "experiencia": [
+        {
+            "empresa": "Microsoft",
+            "antiguedad": 5
+        },
+        {
+            "empresa": "Google",
+            "antiguedad": 3
+        }
+    ],
+    "direccion": {
+        "calle": "Los Jardines",
+        "numero": "935349263",
+        "colonia": "Montaña"
+    }
+}
