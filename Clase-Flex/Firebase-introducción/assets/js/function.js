@@ -148,16 +148,60 @@ $(document).ready(function(){
                 data.forEach(document => {
                     let doc = document.data();
                     const divPost = `
-                        <div class='border:solid 2px'>
+                        <div style='border:solid 2px'>
                             <p>${doc.text}</p><br>
-                            <span>Publicado el: ${doc.day}/${doc.year}</span>
+                            <texarea style='display: none';></texarea>
+                            <button data-id="${document.id}" style='display: none;'>Guardar</button>
+                            <span>Publicado el: ${doc.day}/${doc.month}/${doc.year}</span>
+                            <button data-id="${document.id}" class="btn btn-warning btn-edit-post">Editar</button>
+                            <button data-id="${document.id}" class="btn btn-danger btn-delete-post">Eliminar</button>
                         </div>
                         <hr>
                     `;
                     content += divPost;
                 });
                 divContent.append(content);
+                //Agregar listener a btn-delete
+                const btnDelete = document.querySelectorAll(".btn-delete-post");
+                btnDelete.forEach(btn=>{
+                    btn.addEventListener("click",(e)=>{
+                        const id = e.target.dataset.id;
+                        deletePost(id);
+                    })
+                })
             }
         }
+        function deletePost(id){
+            db.collection("post").doc(id).delete().then(() => {
+                alert("Se ha eliminado correctamente");
+                readPosts();
+            }).catch((error) => {
+                console.error("Detalle del Error: ", error);
+            });
+        }
+
+        function upDatePost(id){
+            db.collection("post").doc(id).get().then((doc)=>{
+                const item = doc.data();
+                $("").val(item.post);
+            })
+            .catch((error)=>{
+                alert("Error: ", error);
+            })
+        }
+
+        $("#btn.update").click(function(e){
+            e.preventDefault();
+            let post_upgrade = $("").val();
+            let id_post = $("").val();
+            db.collection("post").doc(id_post).update({
+                post: post_upgrade,
+            }).then(()=>{
+                alert("Post Actualizado");
+            })
+            .catch((error)=>{
+                alert("Error:",error);
+            })
+        })
 })
 
